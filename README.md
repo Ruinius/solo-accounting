@@ -21,13 +21,13 @@ The business plan is divided into modular sections. Click the summaries below to
 
 | Folder | Focus Area | Core Document / Summary |
 | :--- | :--- | :--- |
-| **💡 Core Philosophy** | Mission & Strategic Aspirational Vision | [mission.md](file:///f:/AIML%20projects/solo-accounting/mission_vision/mission.md) / [vision.md](file:///f:/AIML%20projects/solo-accounting/mission_vision/vision.md) |
-| **👥 Users & Workflows** | Freelancer & Micro-Business Needs | [user_research_summary.md](file:///f:/AIML%20projects/solo-accounting/user_research/user_research_summary.md) |
-| **⚔️ Market Analysis** | Competitor Matrix & Value Proposition | [competitive_research_summary.md](file:///f:/AIML%20projects/solo-accounting/competitive_research/competitive_research_summary.md) |
-| **🛠️ Product Features** | Core MVP Specifications & Roadmap | [product_spec_summary.md](file:///f:/AIML%20projects/solo-accounting/product_spec/product_spec_summary.md) |
-| **🏗️ Engineering Design** | Local-First Tech Stack & Security Plan | [architecture_summary.md](file:///f:/AIML%20projects/solo-accounting/architecture/architecture_summary.md) |
-| **🤖 AI & Automation** | Multi-Agent Coordination Guidelines | [ai_agents_summary.md](file:///f:/AIML%20projects/solo-accounting/ai_agents/ai_agents_summary.md) |
-| **💸 Financial Model** | Monetization Tiers & Cost Projections | [business_model_summary.md](file:///f:/AIML%20projects/solo-accounting/business_model/business_model_summary.md) |
+| **💡 Core Philosophy** | Mission & Strategic Aspirational Vision | [mission.md](file:///f:/AIML%20projects/solo-accounting/1_mission_vision/mission.md) / [vision.md](file:///f:/AIML%20projects/solo-accounting/1_mission_vision/vision.md) |
+| **👥 Users & Workflows** | Freelancer & Micro-Business Needs | [user_research_summary.md](file:///f:/AIML%20projects/solo-accounting/2_user_research/user_research_summary.md) |
+| **⚔️ Market Analysis** | Competitor Matrix & Value Proposition | [competitive_research_summary.md](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/competitive_research_summary.md) |
+| **🛠️ Product Features** | Core MVP Specifications & Roadmap | [product_spec_summary.md](file:///f:/AIML%20projects/solo-accounting/4_product_spec/product_spec_summary.md) |
+| **🏗️ Engineering Design** | Local-First Tech Stack & Security Plan | [architecture_summary.md](file:///f:/AIML%20projects/solo-accounting/5_architecture/architecture_summary.md) |
+| **🤖 AI & Automation** | Multi-Agent Coordination Guidelines | [ai_agents_summary.md](file:///f:/AIML%20projects/solo-accounting/6_ai_agents/ai_agents_summary.md) |
+| **💸 Financial Model** | Monetization Tiers & Cost Projections | [business_model_summary.md](file:///f:/AIML%20projects/solo-accounting/7_business_model/business_model_summary.md) |
 
 ---
 
