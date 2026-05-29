@@ -42,12 +42,19 @@ solo-accounting/
 │   ├── invoicing_billing.md        # Client invoicing, multi-currency, and QR payments
 │   ├── reporting.md                # Financial P&L, Balance Sheet, and Tax preparation hubs
 │   ├── solopreneur_tools.md        # Mileage logs and co-mingled account cleanups
-│   └── collaboration.md            # Multi-user roles, CPA handoffs, and payroll help
+│   ├── collaboration.md            # Multi-user roles, CPA handoffs, and payroll help
+│   ├── time_tracking.md            # Time tracking and hourly billing helpers
+│   └── inventory_management.md     # Product inventory levels and Cost of Goods Sold (COGS)
 
 ├── 5_architecture/                 # Technical architecture plans and data storage design
 │   └── architecture_summary.md     # Technical stack, local-first philosophy, and privacy
 ├── 6_ai_agents/                    # Multi-agent coordination and workspace setup
-│   └── ai_agents_summary.md        # Summary of agent prompt guidelines and tools
+│   ├── ai_agents_summary.md        # Summary of agent prompt guidelines and tools
+│   ├── customer_service_agent.md   # Spec: strict FAQ support & ticketing assistant
+│   ├── issue_resolution_agent.md   # Spec: scheduled nightly low-risk bug patcher
+│   ├── roadmap_agent.md            # Spec: user feedback synthesis & roadmap planner
+│   ├── coding_agent.md             # Spec: nightly minor feature auto-implementation
+│   └── marketing_agent.md          # Spec: benign, organic value-first community builder
 └── 7_business_model/               # Financial modeling and pricing strategy
     └── business_model_summary.md   # Pricing tiers, operational cost projections, and value
 ```

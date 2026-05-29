@@ -14,10 +14,6 @@ This directory defines the core features, MVP scope, and product specifications 
 
 ---
 
-COMMENT: missing time tracking and inventory management
-COMMENT: there needs to be customer support feature using emails, which is an AI agent that tries to support via strict FAQ (no hallucination). If there is nothing in the FAQ, then the AI agent gathers more information and creates a ticket
-COMMENT: this is invisible to the user, but there should be autonomous AI agents taking issues tickets and trying to resolve.
-
 ## 📂 Detailed Feature Specifications
 
 We have broken down each major feature of Solo Accounting into a dedicated, layman-friendly specification:
@@ -45,3 +41,9 @@ We have broken down each major feature of Solo Accounting into a dedicated, laym
 
 ### 8. 👥 [Multi-User Collaboration & Permissions](file:///f:/AIML%20projects/solo-accounting/4_product_spec/collaboration.md)
 * Outlines custom-tailored user roles (Owner, Accountant, Billing Clerk), secure CPA handoffs, and basic payroll tax calculator helpers.
+
+### 9. ⏱️ [Time Tracking & Hourly Billing](file:///f:/AIML%20projects/solo-accounting/4_product_spec/time_tracking.md)
+* Track active timers or manually log client hours, separate billable/non-billable tasks, and auto-convert logged timesheets to clean, professional invoices.
+
+### 10. 📦 [Inventory & Cost of Goods Sold (COGS)](file:///f:/AIML%20projects/solo-accounting/4_product_spec/inventory_management.md)
+* Seamlessly manage physical product stock counts, set low-stock thresholds, and automatically move inventory values to Cost of Goods Sold (COGS) on sale.
