@@ -18,7 +18,12 @@ solo-accounting/
 │   ├── mission.md                  # The mission statement
 │   └── vision.md                   # The vision statement
 ├── 2_user_research/                # Target personas and market pain points
-│   └── user_research_summary.md    # Synthesis of user research, stories, and workflows
+│   ├── user_research_summary.md    # Synthesis of user research, stories, and workflows
+│   ├── sarah_baker.md              # Persona: Artisanal home bakery owner (Solopreneur)
+│   ├── joe_plumber.md              # Persona: Residential plumbing operator (3 employees)
+│   ├── elena_designer.md           # Persona: Remote brand consultant (Freelancer)
+│   ├── marcus_contractor.md        # Persona: Small general contractor (8 employees)
+│   └── diana_gigworker.md          # Persona: Multi-app gig economy driver (Courier)
 ├── 3_competitive_research/         # Direct and indirect competitive analysis
 │   └── competitive_research_summary.md # Summary of competitors, pricing models, and market gaps
 ├── 4_product_spec/                 # Product requirements and MVP definition

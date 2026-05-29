@@ -2,6 +2,24 @@
 
 This document details the analysis of our direct and indirect competitors in the small business accounting software space, identifies critical product gaps in the current market, and defines our strategic positioning.
 
+COMMENT:
+for each competitor, be more specific. Let's focus on the true small business competitors. For example, the lowest tier of QuickBooks. If there are two QuickBooks products, then separate them. Use their lowest tier pricing and feature combo to compare. Add citation. DO NOT HALLUCINATE
+Go online and find user ratings of competitor product. Add citation. DO NOT HALLUCINATE
+Each competitor should be a separate markdown file, for example: wave_accounting.md
+
+So, each markdown will have the following sections:
+* Specific product name
+* Feature list
+* Price
+* Target audience
+* User experience - look at the screenshot before answering
+* User ratings and reviews
+
+Create a folder called 3_competitive_research/screenshots
+Go online and find and download screenshots of each competitor product
+
+
+
 ---
 
 ## 📊 Competitor Matrix
@@ -13,7 +31,6 @@ This document details the analysis of our direct and indirect competitors in the
 | **GnuCash** | Local Desktop | Open Source (Free) | Retro / Dated (Win95 style) | High (Local files) |
 | **Manager.io** | Local / Cloud | Free Desktop / $49/mo Cloud | Functional but Dry | High (Local files) |
 | **Actual Budget** | Local / Self-Host | Open Source (Free) | Clean & Modern | High (E2EE sync) |
-| **Solo Accounting** | **Local-First + Sync** | **Free Desktop / $3-$5/mo Sync** | **Stunning & Modern** | **Absolute (E2EE, Local SQLite)** |
 
 ---
 
