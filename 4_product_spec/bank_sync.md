@@ -63,5 +63,5 @@ Here is how transaction imports are processed, categorized, and balanced automat
 When a bank transaction arrives, Solo Accounting doesn't just sit there. It looks at your past habits and uses simple, smart rules to propose a category:
 
 1. **Exact Rule Matches:** If a payee contains `Chevron` or `Shell`, the system automatically maps it to your `Expenses:Travel:Fuel` account.
-2. **AI Assistance:** If the vendor is new (e.g. `Joe's Bakery Supply`), our local-first AI assistant parses the name and matches it to `Expenses:Supplies:BakingSupplies`, displaying a small indicator: `95% Match Confidence`.
+2. **AI Assistance:** If the vendor is new (e.g. `Joe's Bakery Supply`), our server-side secure AI assistant parses the name and matches it to `Expenses:Supplies:BakingSupplies`, displaying a small indicator: `95% Match Confidence`.
 3. **One-Click Reconciliation:** Your dashboard shows a simple list of new transactions. You just scan the list, tap the Spacebar or click **"Reconcile All"**, and they are instantly added to your balanced ledger.

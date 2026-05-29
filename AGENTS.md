@@ -47,7 +47,12 @@ solo-accounting/
 │   └── inventory_management.md     # Product inventory levels and Cost of Goods Sold (COGS)
 
 ├── 5_architecture/                 # Technical architecture plans and data storage design
-│   └── architecture_summary.md     # Technical stack, local-first philosophy, and privacy
+│   ├── architecture_summary.md     # Index, SaaS principles, and component summaries
+│   ├── core_platform.md            # PostgreSQL RLS databases, pgvector, and serverless microservices
+│   ├── ai_interface.md             # SaaS agent API gateway and Redis semantic prompt caching
+│   ├── internal_dashboard.md       # SaaS telemetry dashboard, cost trackers, and mobile HITL board
+│   ├── ai_agents.md                # Polsia CEO orchestration, cross-company learning, microVMs
+│   └── security.md                 # Ephemeral sandboxing, KMS key vaulting, and SQL guardrails
 ├── 6_ai_agents/                    # Multi-agent coordination and workspace setup
 │   ├── ai_agents_summary.md        # Summary of agent prompt guidelines and tools
 │   ├── customer_service_agent.md   # Spec: strict FAQ support & ticketing assistant
@@ -56,7 +61,10 @@ solo-accounting/
 │   ├── coding_agent.md             # Spec: nightly minor feature auto-implementation
 │   └── marketing_agent.md          # Spec: benign, organic value-first community builder
 └── 7_business_model/               # Financial modeling and pricing strategy
-    └── business_model_summary.md   # Pricing tiers, operational cost projections, and value
+    ├── business_model_summary.md   # Index, financial philosophy, and quick-link hub
+    ├── unit_economics.md           # Cost breakdown per subscriber (Stripe, bank sync, AI)
+    ├── market_size.md              # Target market sizing (TAM/SAM/SOM) and breakeven model
+    └── single_period_economics.md  # 12-month P&L projection for 1,000 users (CA LLC)
 ```
 
 ---
@@ -85,4 +93,4 @@ To ensure a highly professional and readable repository, all markdown files must
 As a pair programmer and business plan developer in this repo, follow these instructions:
 * **Plan Before Execution:** Use planning mode artifacts (`implementation_plan.md`, `task.md`, `walkthrough.md`) for any non-trivial modifications.
 * **Keep Summaries Updated:** Each directory (except `1_mission_vision/`) must have a corresponding summary markdown file that provides a high-level view of the files inside that directory.
-* **Data Ownership Focus:** The core USP of Solo Accounting is local-first, privacy-respecting, low-cost/free utility. Ensure all architectural and product decisions respect these principles.
+* **Privacy-First Focus:** The core USP of Solo Accounting is a highly secure, privacy-respecting, low-cost/free multi-tenant cloud SaaS utility. Ensure all architectural and product decisions respect these principles.

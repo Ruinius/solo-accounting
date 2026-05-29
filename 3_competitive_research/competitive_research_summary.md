@@ -36,19 +36,19 @@ To ensure maximum accuracy and detail, each core competitor has been analyzed in
         [ HIGH DESIGN / MODERN SaaS ]
                       │
                       │         ⭐ Solo Accounting (Our Position)
-                      │         (Beautiful, Local-first + cheap sync)
-       Wave ──────────┼──────────
+                      │         (Beautiful, Cloud-native + low cost)
+        Wave ──────────┼──────────
                       │
                       │         GnuCash / Manager.io
                       │         (Clunky UI, robust desktop)
         [ LEGACY DESIGN / OUTDATED ]
                       │
- [ CLOUD ONLY ] ──────┴────── [ LOCAL-FIRST / OWNED ]
+ [ CENTRALIZED BLOAT ] ───┴─── [ EFFICIENT / PRIVACY-FIRST ]
 ```
 
-1. **Local-First with E2EE Sync:** By keeping data locally in a standard SQLite file and syncing it using End-to-End Encryption, we guarantee privacy. No employee, hacker, or server owner can read your financial ledger.
+1. **Secure Cloud Multi-Tenancy:** Using cryptographically-isolated Row-Level Security (RLS) on PostgreSQL, we guarantee top-tier enterprise privacy and instant access on any device without data cross-leakage.
 2. **Beautiful and Delightful Bookkeeping:** Making invoicing and expense tagging feel like a fluid, modern experience using micro-animations, curated palettes, and a dark mode by default.
-3. **Open Standards:** Storing ledger data in clean tables that can be opened in any database viewer, preventing vendor lock-in.
+3. **Open Standards:** Storing ledger data in clean tables that can be exported directly into standard formats (CSV, JSON, SQL), preventing vendor lock-in.
 
 ---
 

@@ -8,7 +8,7 @@
 
 ## 🗺️ The Horizon Roadmap: Beyond Accounting
 
-Accounting is our beachhead. It is the core operating system of any business. Once we establish a rock-solid, local-first financial ledger built specifically for the nuances of US tax codes and compliance, we will expand our AI-native engine to capture other massive software categories for US small businesses. We purposefully remain US-focused: accounting software is highly regional and regulatory, and a localized approach ensures unmatched precision and compliance.
+Accounting is our beachhead. It is the core operating system of any business. Once we establish a rock-solid, cloud-native financial ledger built specifically for the nuances of US tax codes and compliance, we will expand our AI-native engine to capture other massive software categories for US small businesses. We purposefully remain US-focused: accounting software is highly regional and regulatory, and a localized approach ensures unmatched precision and compliance.
 
 ```mermaid
 gantt
@@ -29,7 +29,7 @@ gantt
 ```
 
 ### 🎯 Phase 1: Solo Accounting (The Foundation)
-Establish a local-first, privacy-respecting accounting engine tailored for US businesses. We will automate bank sync, invoicing, tax planning, and reporting, backed by autonomous AI agents that act as on-demand technical and bookkeeping staff.
+Establish a highly secure, privacy-respecting cloud-native accounting engine tailored for US businesses. We will automate bank sync, invoicing, tax planning, and reporting, backed by autonomous AI agents that act as on-demand technical and bookkeeping staff.
 
 ### 📣 Phase 2: Solo Growth (The Marketing & Service Engine)
 Extend our AI capabilities into customer acquisition and customer support for US small businesses:
@@ -64,7 +64,7 @@ graph LR
 By keeping our core engineering and operations team under 10 people:
 1. **Unbeatable Value:** We do not have greedy VCs or Wall Street shareholders to feed. We can charge nominal, sustainability-oriented fees that cover our lean operations while directly supporting the broader small business community.
 2. **Speed & Focus:** Decision-making remains instant. No corporate bureaucracy, no committee-driven designs—just pure, relentless product innovation.
-3. **Data Sovereignty:** Because we do not need to monetize user data to feed a massive payroll, we can stand firm on our local-first, privacy-respecting principles.
+3. **Data Privacy & Security:** Because we do not need to monetize user data to feed a massive payroll, we can stand firm on our privacy-first, secure cloud multi-tenancy principles.
 
 ---
 

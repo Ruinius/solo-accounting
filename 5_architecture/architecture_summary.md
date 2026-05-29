@@ -1,96 +1,28 @@
-# 🏗️ Technical Architecture Summary - Solo Accounting
+# 🏗️ Technical Architecture Summary - Solo Accounting (SaaS)
 
-This document details the engineering guidelines, proposed technical stack, database schema design, and security architecture designed to enforce Solo Accounting's core "local-first" philosophy.
-
----
-
-## 💻 Recommended Tech Stack
-
-To maximize performance, reliability, and visual flexibility, we propose a modern desktop-first and local-web architecture:
-
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│                     USER INTERFACE (HTML5/CSS/JS)               │
-│         Next.js / Vite + SolidJS (Premium Rich Styling)         │
-└────────────────────────────────┬────────────────────────────────┘
-                                 │ Inter-process Communication (IPC)
-┌────────────────────────────────▼────────────────────────────────┐
-│                   DESKTOP APPLICATION CONTAINER                 │
-│         Tauri (Rust-based shell, ultra-lightweight, 10MB RAM)   │
-└────────────────────────────────┬────────────────────────────────┘
-                                 │ Native Rust Bindings
-┌────────────────────────────────▼────────────────────────────────┐
-│                      LOCAL DATA STORAGE                         │
-│         SQLite Database File (Instant Local SQL Queries)        │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-1. **Frontend Core:** **Vite + React or SolidJS**. Vanilla CSS styling for fluid animations, custom HSL styling, and dark-mode performance.
-2. **Desktop Shell:** **Tauri**. We reject Electron due to its massive memory consumption and bloated package sizes. Tauri uses the system's native webview and compiles directly to Rust, resulting in tiny executables (< 10MB) and near-zero idling RAM.
-3. **Local Database:** **SQLite**. SQLite is the gold standard for robust local files. The entire business ledger is a single file (e.g., `my_business.db`), allowing effortless backup and portability.
+This document defines the high-level, cloud-native microservices architecture of **Solo Accounting**. Operating as a multi-tenant SaaS, our system leverages state-of-the-art autonomous multi-agent orchestration (inspired by Polsia) to execute complex, background business operations securely, continuously, and cost-effectively.
 
 ---
 
-## 🗄️ Conceptual Database Schema
+## 🗂️ Architectural Specifications Index
 
-Our relational SQL schema is normalized to ensure perfect mathematical consistency for double-entry bookkeeping:
+Click on the links below to read the detailed technical blueprints for each architectural layer:
 
-```mermaid
-erDiagram
-    TRANSACTIONS ||--|{ ENTRIES : contains
-    ACCOUNTS ||--|{ ENTRIES : categorized_under
-    CLIENTS ||--|{ INVOICES : bills
-    INVOICES ||--|{ INVOICE_ITEMS : contains
-
-    TRANSACTIONS {
-        uuid id PK
-        date transaction_date
-        string description
-        string reference_no
-        datetime created_at
-    }
-
-    ENTRIES {
-        uuid id PK
-        uuid transaction_id FK
-        uuid account_id FK
-        decimal debit_amount "Amount added to account"
-        decimal credit_amount "Amount subtracted from account"
-    }
-
-    ACCOUNTS {
-        uuid id PK
-        string name "Assets, Cash, Revenue, etc."
-        string type "Asset, Liability, Equity, Income, Expense"
-        uuid parent_id FK
-    }
-    
-    INVOICES {
-        uuid id PK
-        uuid client_id FK
-        string invoice_number
-        date issue_date
-        date due_date
-        string status "Draft, Sent, Paid, Overdue"
-        decimal tax_rate
-    }
-```
+1. 🏛️ **[Core Platform & Microservices](file:///f:/AIML%20projects/solo-accounting/5_architecture/core_platform.md)**
+   * Centralized multi-tenant database cluster (PostgreSQL with Row-Level Security), semantic bank syncing indexes (`pgvector`), and low-latency internal microservices hosted on serverless runtimes.
+2. 🤖 **[SaaS-Optimized AI Interface](file:///f:/AIML%20projects/solo-accounting/5_architecture/ai_interface.md)**
+   * Scoped agent API gateways, compact token-dense JSON context formats, and centralized Redis-based **Semantic Prompt Caching** to minimize LLM token billing.
+3. 🖥️ **[SaaS Telemetry & Agent Workspace](file:///f:/AIML%20projects/solo-accounting/5_architecture/internal_dashboard.md)**
+   * Real-time metrics logging (prompt tokens, compute durations, caching efficiency), SaaS metrics trackers, and web/mobile-native Human-in-the-Loop (HITL) authorization queues.
+4. 🤖 **[Polsia-Inspired Agent Framework](file:///f:/AIML%20projects/solo-accounting/5_architecture/ai_agents.md)**
+   * Centralized **AI CEO Agent** orchestrator executing continuous 24/7 cycles, a **Global Cross-Company Learning Store** to share anonymized transaction heuristics, and ephemeral Docker/Firecracker microVM sandboxes.
+5. 🔒 **[SaaS Security & Sandbox Safeguards](file:///f:/AIML%20projects/solo-accounting/5_architecture/security.md)**
+   * Epic scale chroot sandbox jails, outbound network blocks on execution runtimes, input shell-sanitization, and secure AWS KMS secrets tokenization to protect user credentials.
 
 ---
 
-## 🔒 Security & E2EE Sync Mechanics
+## 💡 Core Architecture Principles
 
-To enable multi-device sync without compromising privacy, Solo Accounting implements a **Zero-Knowledge Architecture**:
-
-1. **Local Keychain Encryption:** The local SQLite database is encrypted on-disk using **SQLCipher** (AES-256), with the decryption key stored securely in the operating system's native keychain (Windows Credential Manager / macOS Keychain).
-2. **End-to-End Encrypted (E2EE) Sync:**
-   * When sync is enabled, a standard sync key is generated locally (not shared with the server).
-   * All synchronization data is compressed, encrypted locally via **AES-GCM-256**, and sent to the cloud sync host.
-   * The hosting server only sees arbitrary, opaque bytes of ciphertext. It is mathematically impossible for server operators or hackers to view transactions, clients, or revenue figures.
-
----
-
-> [!CAUTION]
-> **Data Integrity Constraint:** In double-entry bookkeeping, the total debits must always equal total credits for any transaction:
-> $$\sum \text{Debits} = \sum \text{Credits}$$
-> The database layer must use transactional SQL rollbacks and rigid constraint checks to ensure no unbalanced ledger entries can ever be committed to disk.
+* **Frictionless User Experience:** Non-technical business owners access their ledger from any web browser or mobile phone instantly, leaving database management, security patches, and background sync to the cloud infrastructure.
+* **Continuous Sleep-Execution:** Background agents run 24/7 on serverless cloud containers, executing nightly audits, tax filings, and code maintenance routines while the founder is offline.
+* **Radical Token Cost Efficiency:** By implementing centralized vector prompt caching, the platform matches and answers recurring requests instantly, bypassing costly frontier LLM calls and keeping operational overhead down.
