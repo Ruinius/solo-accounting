@@ -1,72 +1,49 @@
 # ⚔️ Competitive Research Summary - Solo Accounting
 
-This document details the analysis of our direct and indirect competitors in the small business accounting software space, identifies critical product gaps in the current market, and defines our strategic positioning.
+This directory houses detailed, citation-backed analyses of our direct and indirect competitors in the small business accounting and budgeting space, identifies critical product gaps in the current market, and defines our strategic positioning.
 
-COMMENT:
-for each competitor, be more specific. Let's focus on the true small business competitors. For example, the lowest tier of QuickBooks. If there are two QuickBooks products, then separate them. Use their lowest tier pricing and feature combo to compare. Add citation. DO NOT HALLUCINATE
-Go online and find user ratings of competitor product. Add citation. DO NOT HALLUCINATE
-Each competitor should be a separate markdown file, for example: wave_accounting.md
+---
 
-So, each markdown will have the following sections:
-* Specific product name
-* Feature list
-* Price
-* Target audience
-* User experience - look at the screenshot before answering
-* User ratings and reviews
+## 📂 Detailed Competitor Analyses
 
-Create a folder called 3_competitive_research/screenshots
-Go online and find and download screenshots of each competitor product
+To ensure maximum accuracy and detail, each core competitor has been analyzed in a dedicated profile covering their feature list, pricing tiers, target audience, UI/UX aesthetics, and verified user ratings:
 
-
+*   **[QuickBooks Solopreneur](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/quickbooks_solopreneur.md):** QuickBooks' lowest single-entry tier, designed strictly for sole proprietors and gig workers ($20/mo).
+*   **[QuickBooks Online Simple Start](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/quickbooks_simple_start.md):** The entry-level double-entry accounting plan for growing small businesses ($38/mo).
+*   **[Wave Accounting](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/wave_accounting.md):** A modern, elegant web-based platform with a free Starter invoicing tier and a paid Pro plan ($19/mo).
+*   **[GnuCash](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/gnucash.md):** The classic, open-source desktop program offering robust offline privacy and zero subscription costs ($0).
+*   **[Manager.io](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/manager_io.md):** A modular, snappy offline-first desktop ledger with premium multi-user cloud additions ($0 desktop / $59/mo cloud).
+*   **[Actual Budget](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/actual_budget.md):** A modern, open-source, local-first budgeting tool centered on envelope allocations and End-to-End Encryption ($0 self-hosted).
 
 ---
 
 ## 📊 Competitor Matrix
 
-| Competitor | Hosting Model | Pricing Model | User Experience (UI) | Data Privacy & Control |
-| :--- | :--- | :--- | :--- | :--- |
-| **QuickBooks (Intuit)** | Cloud Only | $20 - $90+ / mo | Moderately Bloated | Poor (Proprietary Lock-in, Ad-Targeted) |
-| **Wave Accounting** | Cloud Only | Free (Pay via Ad-Scraping / Fees) | Modern & Elegant | Poor (Data monetized, ads) |
-| **GnuCash** | Local Desktop | Open Source (Free) | Retro / Dated (Win95 style) | High (Local files) |
-| **Manager.io** | Local / Cloud | Free Desktop / $49/mo Cloud | Functional but Dry | High (Local files) |
-| **Actual Budget** | Local / Self-Host | Open Source (Free) | Clean & Modern | High (E2EE sync) |
-
----
-
-## 🔍 Detailed Competitor Breakdown
-
-### 1. The Cloud Giants (QuickBooks, Xero)
-* **Strengths:** Automated bank feeds, massive accountant network, integrations.
-* **Weaknesses:** Highly expensive recurring fees, continuous price hikes, forced migration of older products, steep learning curves for non-accountants.
-* **Our Opportunity:** Capture cost-conscious solopreneurs who feel exploited by subscription hikes and only need core bookkeeping.
-
-### 2. The Free Cloud Competitors (Wave)
-* **Strengths:** Beautiful, easy-to-use interface, invoicing integrations.
-* **Weaknesses:** Monetized through high card-processing fees and extensive user transaction data scraping. They have recently started adding restrictions to their free tier to force subscriptions.
-* **Our Opportunity:** Offer a truly free desktop core with zero ads and complete data privacy, capturing users who are fleeing Wave's monetization shifts.
-
-### 3. The Traditional Desktop Tools (GnuCash, Manager.io)
-* **Strengths:** Robust, locally stored data, high reliability, free.
-* **Weaknesses:** Outdated, intimidating interfaces that resemble legacy software. No seamless modern web sync or easy mobile companion.
-* **Our Opportunity:** Match the absolute safety and offline reliability of GnuCash, but with the breathtaking, animated visual aesthetics of a modern Next.js/Vite SaaS platform.
+| Competitor | Hosting Model | Pricing Model | User Experience (UI) | Data Privacy & Control | Detailed Profiles |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **QB Solopreneur** | Cloud Only | $20 / month | Simplified mobile-first | Poor (Lock-in, upsells) | [Profile](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/quickbooks_solopreneur.md) |
+| **QB Simple Start** | Cloud Only | $38 / month | Standard cloud SaaS | Poor (Lock-in, ads) | [Profile](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/quickbooks_simple_start.md) |
+| **Wave Accounting** | Cloud Only | Free / $19 per month | Beautiful & Minimalist | Poor (Monetized transaction data) | [Profile](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/wave_accounting.md) |
+| **GnuCash** | Local Desktop | Open Source (Free) | Retro / Dated (Win95 style) | High (Strictly offline files) | [Profile](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/gnucash.md) |
+| **Manager.io** | Local / Cloud | Free Desktop / $59/mo Cloud | Clean, tabular, but dry | High (Local SQLite storage) | [Profile](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/manager_io.md) |
+| **Actual Budget** | Local / Self-Host | Open Source (Free) | Stunning modern dark mode | High (Local-first with E2EE sync) | [Profile](file:///f:/AIML%20projects/solo-accounting/3_competitive_research/actual_budget.md) |
 
 ---
 
 ## 🎯 Our Strategic Gaps & Positioning (USP)
 
 ```text
-       [ HIGH DESIGN / MODERN SaaS ]
-                     │
-                     │         ⭐ Solo Accounting (Our Position)
-                     │         (Beautiful, Local-first + cheap sync)
-      Wave ──────────┼──────────
-                     │
-                     │         GnuCash / Manager.io
-                     │         (Clunky UI, robust desktop)
-       [ LEGACY DESIGN / OUTDATED ]
-                     │
-[ CLOUD ONLY ] ──────┴────── [ LOCAL-FIRST / OWNED ]
+        [ HIGH DESIGN / MODERN SaaS ]
+                      │
+                      │         ⭐ Solo Accounting (Our Position)
+                      │         (Beautiful, Local-first + cheap sync)
+       Wave ──────────┼──────────
+                      │
+                      │         GnuCash / Manager.io
+                      │         (Clunky UI, robust desktop)
+        [ LEGACY DESIGN / OUTDATED ]
+                      │
+ [ CLOUD ONLY ] ──────┴────── [ LOCAL-FIRST / OWNED ]
 ```
 
 1. **Local-First with E2EE Sync:** By keeping data locally in a standard SQLite file and syncing it using End-to-End Encryption, we guarantee privacy. No employee, hacker, or server owner can read your financial ledger.

@@ -1,65 +1,47 @@
 # 🛠️ Product Specification Summary - Solo Accounting
 
-This specification outlines the functional and non-functional requirements for the **Solo Accounting MVP**, detailing the features required for a successful launch and the long-term product roadmap.
+This directory defines the core features, MVP scope, and product specifications for **Solo Accounting**. It outlines our cloud-based, AI-friendly, privacy-focused strategy tailored specifically for freelancers, tradespeople, contractors, and gig economy workers.
 
 ---
 
-## 💎 Core MVP Features
+## 🚀 Core Product Tenets
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│                     SOLO ACCOUNTING MVP CORE                    │
-├─────────────────┬─────────────────┬──────────────┬──────────────┤
-│  Double-Entry   │    Custom PDF   │   Smart CSV  │  Schedule C  │
-│  Engine (Quiet) │ Invoice Builder │  Importer    │  Tax Reports │
-└─────────────────┴─────────────────┴──────────────┴──────────────┘
-```
-
-### 1. Quiet Double-Entry Bookkeeping Engine
-* **The Concept:** A robust double-entry general ledger runs silently in the background. The user interacts with clean, intuitive screens (e.g., "Add Expense", "Receive Payment") while the software automatically registers the debits and credits.
-* **Chart of Accounts:** Pre-configured default categories tailored for freelancers (Assets, Liabilities, Equity, Revenue, Expenses).
-* **Manual Journal Entries:** An optional "Expert Mode" for manual adjustments, depreciation entry, or tax corrections.
-
-### 2. Custom Invoicing Suite
-* **Template Engine:** Modern, highly aesthetic invoice templates with dynamic CSS layouts, custom typography, and logo uploads.
-* **Drafting & PDF Export:** Auto-saves drafts, handles tax calculations (VAT/Sales Tax), and exports clean vector PDFs locally.
-* **Client Directory:** Simple contact records with default terms, address, and outstanding balance summaries.
-
-### 3. Smart CSV Transaction Importer
-* **Interface:** Drag-and-drop file upload for standard bank CSV exports.
-* **Column Mapping:** Intelligent mapper that remembers header associations for major banks.
-* **Auto-Categorization Rules:** A learning engine that suggests account categories based on descriptions (e.g., "Slack" -> "Software Expense").
-
-### 4. Interactive Reporting Dashboard
-* **Profit & Loss (P&L):** Dynamic date-range selectors, collapsible expense categories, and beautiful HSL-colored trend line charts.
-* **Balance Sheet:** Live snapshot of Assets, Liabilities, and Equity.
-* **Tax Helper (Schedule C):** Specifically highlights categories matching IRS Schedule C lines (or local equivalent) for rapid tax filing.
+1. **Cloud-Based Convenience:** Accessible from any browser with seamless synchronization across devices.
+2. **AI-Friendly Architecture:** Exposes secure, structured APIs designed for AI agents to easily read, draft, and adjust records under the owner's supervision.
+3. **Automated Bank Feeds:** Links seamlessly to financial institutions via low-cost, secure bank sync APIs to keep data entry completely automated.
+4. **No App Store Bloat:** Operates as a Progressive Web App (PWA)—no native app download required. Users can capture receipts using their phone's native browser camera.
+5. **CPA and Tax-Ready:** Leverages the absolute reliability of double-entry ledger rules behind the scenes to export flawless packages for CPAs at tax time.
 
 ---
 
-## ⚙️ Non-Functional Requirements
+COMMENT: missing time tracking and inventory management
+COMMENT: there needs to be customer support feature using emails, which is an AI agent that tries to support via strict FAQ (no hallucination). If there is nothing in the FAQ, then the AI agent gathers more information and creates a ticket
+COMMENT: this is invisible to the user, but there should be autonomous AI agents taking issues tickets and trying to resolve.
 
-1. **Local-First Architecture:** All data is saved on the user's hard drive in a standard, open **SQLite** file. The app requires zero internet access to function fully.
-2. **Speed & Snappiness:** Transitions must be instant, with no loading spinners for local actions.
-3. **Visual WOW Factor:** Sleek dark-mode by default, interactive graphs, hover feedback, and fluid transitions between dashboards.
-4. **Data Portability:** Single-click full backup to a standard `.db` or `.json` file, and single-click full export of all transactions to Excel/CSV.
+## 📂 Detailed Feature Specifications
 
----
+We have broken down each major feature of Solo Accounting into a dedicated, layman-friendly specification:
 
-## 🗺️ Product Roadmap
+### 1. 🧱 [Double-Entry Ledger Architecture](file:///f:/AIML%20projects/solo-accounting/4_product_spec/double_entry.md)
+* Learn why a double-entry ledger (Debits = Credits) guarantees absolute mathematical truth, prevents orphan transactions, and provides CPAs with instant confidence.
 
-### Phase 1: The Local Core (MVP)
-* Desktop application (Windows, macOS, Linux via Tauri/Electron).
-* Local SQLite storage.
-* CSV bank statement importing, manual ledger tagging, and client management.
-* Beautiful PDF invoice generation.
+### 2. 🤖 [AI-Friendly Financial Engine & API](file:///f:/AIML%20projects/solo-accounting/4_product_spec/ai_integration.md)
+* Explore how Solo Accounting exposes a structured JSON API allowing AI agents to draft transactions, read receipts, and process conversational text commands safely in a secure sandbox.
 
-### Phase 2: Secure Sync & Collaboration
-* End-to-End Encrypted (E2EE) database synchronization between multiple devices (e.g., Laptop and Mobile).
-* Paid cloud sync utility ($3 - $5/month) using decentralized servers.
-* Lightweight mobile companion app for receipt capturing and invoice viewing.
+### 3. 🏦 [Automated Bank Connection & Feeds](file:///f:/AIML%20projects/solo-accounting/4_product_spec/bank_sync.md)
+* Understand our secure, read-only Plaid/SimpleFIN bank integrations, how we keep subscription costs down by billing connections "at cost", and our smart transaction auto-categorization.
 
-### Phase 3: The Integrations & Extensions Hub
-* Developer SDK to build plugins (e.g., automated sales tax calculations, Shopify imports).
-* Direct bank API sync (Plaid/Yodlee) for cloud tier.
-* Integrated digital credit card/ACH invoice payment processing.
+### 4. 📸 [Document & Receipt Processing](file:///f:/AIML%20projects/solo-accounting/4_product_spec/receipt_processing.md)
+* See how the mobile web interface snaps receipt photos, extracts key details (OCR), and uses our split-screen reconciler to pin documents to ledger events.
+
+### 5. 📄 [Invoicing, Multi-Currency, & Billing](file:///f:/AIML%20projects/solo-accounting/4_product_spec/invoicing_billing.md)
+* Details client payment portals, real-time multi-currency exchange conversion for remote contractors, and rapid QR code payment capture in the field.
+
+### 6. 📈 [Smart Financial Reporting](file:///f:/AIML%20projects/solo-accounting/4_product_spec/reporting.md)
+* Introduces interactive dashboards for Profit & Loss (P&L), Balance Sheet, and Cash Flow Statements, along with a quarterly Schedule C estimated tax hub.
+
+### 7. 🚲 [Solopreneur & Contractor Add-ons](file:///f:/AIML%20projects/solo-accounting/4_product_spec/solopreneur_tools.md)
+* Includes automated mileage loggers, vehicle expense calculators, and co-mingled transaction cleanup tools for independent operators.
+
+### 8. 👥 [Multi-User Collaboration & Permissions](file:///f:/AIML%20projects/solo-accounting/4_product_spec/collaboration.md)
+* Outlines custom-tailored user roles (Owner, Accountant, Billing Clerk), secure CPA handoffs, and basic payroll tax calculator helpers.

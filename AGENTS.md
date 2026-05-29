@@ -25,9 +25,25 @@ solo-accounting/
 │   ├── marcus_contractor.md        # Persona: Small general contractor (8 employees)
 │   └── diana_gigworker.md          # Persona: Multi-app gig economy driver (Courier)
 ├── 3_competitive_research/         # Direct and indirect competitive analysis
-│   └── competitive_research_summary.md # Summary of competitors, pricing models, and market gaps
+│   ├── competitive_research_summary.md # Summary of competitors, pricing models, and market gaps
+│   ├── quickbooks_solopreneur.md   # Competitor profile: QuickBooks Solopreneur
+│   ├── quickbooks_simple_start.md  # Competitor profile: QuickBooks Online Simple Start
+│   ├── wave_accounting.md          # Competitor profile: Wave Accounting
+│   ├── gnucash.md                  # Competitor profile: GnuCash
+│   ├── manager_io.md               # Competitor profile: Manager.io
+│   ├── actual_budget.md            # Competitor profile: Actual Budget
+│   └── screenshots/                # Competitor user interface screenshots & mockups
 ├── 4_product_spec/                 # Product requirements and MVP definition
-│   └── product_spec_summary.md     # Summary of product features and roadmap
+│   ├── product_spec_summary.md     # Summary of product features and roadmap
+│   ├── double_entry.md             # Core Double-Entry Ledger architecture details
+│   ├── ai_integration.md           # Secure AI integrations and sandboxed APIs
+│   ├── bank_sync.md                # Automated bank connections and reconciliation rules
+│   ├── receipt_processing.md       # Document/Receipt processing and OCR matching
+│   ├── invoicing_billing.md        # Client invoicing, multi-currency, and QR payments
+│   ├── reporting.md                # Financial P&L, Balance Sheet, and Tax preparation hubs
+│   ├── solopreneur_tools.md        # Mileage logs and co-mingled account cleanups
+│   └── collaboration.md            # Multi-user roles, CPA handoffs, and payroll help
+
 ├── 5_architecture/                 # Technical architecture plans and data storage design
 │   └── architecture_summary.md     # Technical stack, local-first philosophy, and privacy
 ├── 6_ai_agents/                    # Multi-agent coordination and workspace setup
