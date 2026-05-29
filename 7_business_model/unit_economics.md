@@ -18,8 +18,8 @@ Assuming a typical SaaS tier distribution of **70% Annual** and **30% Monthly** 
 | Metric | Monthly Plan ($7.00/mo) | Annual Plan ($70.00/yr) | Blended Average (~70% Ann / 30% Mo) |
 | :--- | :---: | :---: | :---: |
 | **Gross Monthly Revenue** | **$7.00** | **$5.83** | **$6.18** |
-| Stripe Payment Fee (2.9% + $0.30) | $0.50 | $0.19 | $0.29 |
-| **Net Revenue (After Gateway)** | **$6.50** | **$5.64** | **$5.89** |
+| Stripe Payment Fee (2.9% + $0.30) | $0.50 | $0.19 | $0.2859 |
+| **Net Revenue (After Gateway)** | **$6.50** | **$5.64** | **$5.8941** |
 | *COGS: Bank Sync (Teller/Plaid)* | $1.00 | $1.00 | $1.00 |
 | *COGS: AI Model Tokens* | $0.50 | $0.50 | $0.50 |
 | *COGS: Infrastructure & Hosting* | $0.30 | $0.30 | $0.30 |
@@ -36,6 +36,7 @@ Our variable costs are highly optimized through architectural decisions designed
 ### 1. Payment Processing (Stripe)
 * **Monthly Billing:** Standard Stripe fee of 2.9% + $0.30 equals **$0.50** per transaction.
 * **Annual Billing:** Standard Stripe fee on a $70.00 transaction is 2.9% + $0.30 = $2.33, which amortizes to **$0.19 / month** over 12 months.
+* **Blended Average Fee:** With a cohort distribution of 70% annual and 30% monthly users, the mathematically exact average processing overhead is **$0.2859 / user / month** (equivalent to an aggregate annual fee of $3,431.00 for 1,000 active users).
 * **Optimization:** Actively encouraging annual billing yields a **62% transaction fee savings** per user per month.
 
 ### 2. Automated Bank Sync (Plaid / Teller / GoCardless)

@@ -51,26 +51,26 @@ Because we prioritize a highly automated, low-overhead cloud SaaS model, our fix
 
 | Fixed Expense Category | Annual Cost | Monthly Equivalent |
 | :--- | :---: | :---: |
-| California LLC Tax (Minimum Franchise Tax) | $800.00 | $66.67 |
-| Domains, Professional Email, and SSL Certificates | $200.00 | $16.67 |
-| Security Review & Admin Tools | $500.00 | $41.67 |
-| Legal, CPA, and Compliance Software | $1,000.00 | $83.33 |
-| Value-First Organic Community Marketing | $500.00 | $41.67 |
-| **Total Fixed Costs** | **$3,000.00** | **$250.00** |
+| California LLC Franchise Tax | $800.00 | $66.67 |
+| Domains, SSL, and Email Hosting | $200.00 | $16.67 |
+| Community & Organic Marketing | $1,000.00 | $83.33 |
+| Accounting & Tax Software Tools | $500.00 | $41.67 |
+| Legal & CPA Consulting | $1,500.00 | $125.00 |
+| **Total Fixed Costs** | **$4,000.00** | **$333.33** |
 
 ### 2. Breakeven Formula
 Our blended contribution margin is **$4.09 per user per month** (reflecting 70% annual and 30% monthly subscribers, after paying Stripe fees and variable COGS).
 
 $$\text{Breakeven Customers} = \frac{\text{Fixed Monthly Expenses}}{\text{Blended Contribution Margin per User}}$$
 
-$$\text{Breakeven Customers} = \frac{\$250.00}{\$4.09} \approx 61.12$$
+$$\text{Breakeven Customers} = \frac{\$333.33}{\$4.09} \approx 81.50$$
 
 > [!IMPORTANT]
-> **Breakeven Threshold:** Solo Accounting requires only **62 active, paying customers** to achieve full operational breakeven!
+> **Breakeven Threshold:** Solo Accounting requires only **82 active, paying customers** to achieve full operational breakeven!
 
 ### 3. Margin of Safety at SOM Target
 If we achieve our conservative SOM target of **2,000 active customers**:
 * **Total Blended Net Revenue (After Stripe & COGS):** $8,180.00 / month ($98,160.00 / year)
-* **Less Fixed Costs:** -$250.00 / month (-$3,000.00 / year)
-* **Net Operating Surplus:** **$7,930.00 / month ($95,160.00 / year)**
-* **Margin of Safety:** **96.9%** (We can lose 96.9% of our target customers and still remain self-sustaining).
+* **Less Fixed Costs:** -$333.33 / month (-$4,000.00 / year)
+* **Net Operating Surplus:** **$7,846.67 / month ($94,160.00 / year)**
+* **Margin of Safety:** **95.9%** (We can lose 95.9% of our target customers and still remain self-sustaining).

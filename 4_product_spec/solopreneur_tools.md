@@ -31,7 +31,7 @@ For independent contractors and gig economy drivers (like our persona **Diana Gi
 └────────────────────────────────────────────────────────┘
 ```
 
-* **Standard Mileage Method:** Quickly log miles with a purpose. Solo automatically computes the dollar value of the deduction using the latest official government standard rate.
+* **Google Maps Route Mileage Method:** To comply with standard mobile browser sandbox limitations and ensure a seamless PWA experience, Solo does not run battery-draining background GPS tracking. Instead, users simply enter their starting and ending addresses (or select from saved clients), and Solo utilizes the Google Maps API to calculate the route distance instantly, automatically computing the official government standard tax deduction value.
 * **Actual Expenses Method:** If you choose to deduct actual gas, repairs, and insurance rather than standard mileage, Solo helps you allocate a "Business Use Percentage" (e.g. 70% business, 30% personal) to your vehicle expenses, automatically splitting them in your ledger.
 * **Depreciation Helper:** A simple, layman-friendly wizard that calculates your vehicle's yearly depreciation value so you aren't surprised by the true cost of vehicle wear-and-tear.
 

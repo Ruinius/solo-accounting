@@ -37,7 +37,7 @@ We have broken down each major feature of Solo Accounting into a dedicated, laym
 * Introduces interactive dashboards for Profit & Loss (P&L), Balance Sheet, and Cash Flow Statements, along with a quarterly Schedule C estimated tax hub.
 
 ### 7. 🚲 [Solopreneur & Contractor Add-ons](file:///f:/AIML%20projects/solo-accounting/4_product_spec/solopreneur_tools.md)
-* Includes automated mileage loggers, vehicle expense calculators, and co-mingled transaction cleanup tools for independent operators.
+* Includes address-based route mileage calculators (via Google Maps API integrations), vehicle expense calculators, and co-mingled transaction cleanup tools for independent operators.
 
 ### 8. 👥 [Multi-User Collaboration & Permissions](file:///f:/AIML%20projects/solo-accounting/4_product_spec/collaboration.md)
 * Outlines custom-tailored user roles (Owner, Accountant, Billing Clerk), secure CPA handoffs, and basic payroll tax calculator helpers.
